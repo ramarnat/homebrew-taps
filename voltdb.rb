@@ -1,6 +1,7 @@
 require 'formula'
 
 class Voltdb < Formula
+  version '3.7.0.5'
   homepage 'https://github.com/VoltDB/voltdb'
   head 'https://github.com/VoltDB/voltdb.git'
   url 'https://github.com/VoltDB/voltdb/archive/voltdb-3.7.0.5.tar.gz'
