@@ -17,7 +17,9 @@ class Voltdb < Formula
 
     (lib/'voltdb').install Dir['lib/*']
     lib.install_symlink lib/"voltdb/python"
+
+    # make sure that the voltdb database directory is created
+    (var+"voltdb").mkpath
     prefix.install 'bin', 'tools', 'voltdb', 'version.txt', 'doc'
-    var.mkdir "voltdb"
   end
 end
