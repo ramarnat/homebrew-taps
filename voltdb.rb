@@ -5,9 +5,9 @@ class Voltdb < Formula
   homepage 'https://github.com/VoltDB/voltdb'
   head 'https://github.com/VoltDB/voltdb.git'
   url 'https://github.com/VoltDB/voltdb/archive/voltdb-3.7.0.5.tar.gz'
-  sha1 '4710a0b442818ee6f70c3c6bda1e653d6ae0b18e'
+  sha256 'ab9b7b02eca75303914e0b641e1edd344bec977528051dd8452fce616bb78a64'
 
-  depends_on :ant
+  depends_on 'ant'
 
   def install
     system 'ant'
